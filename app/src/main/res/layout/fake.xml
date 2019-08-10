@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+    <RelativeLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow_round"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_40sdp">
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/card_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="@dimen/_10sdp"
+                card_view:cardElevation="0dp"
+
+                card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/iv_field"
+                            android:src="@drawable/ic_card_travel_black_24dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:text="تخصص: جراحة عظام"
+                            android:textColor="#1d1d1d"
+                            android:gravity="center"
+                            android:layout_toEndOf="@+id/iv_field"
+                            android:id="@+id/tv_doctor_field"
+                            android:textSize="@dimen/_8ssp"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_below="@+id/iv_field"
+                            android:layout_alignParentStart="true"
+                            android:id="@+id/iv_address"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_location_on_black_24dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:text="عنوان العيادة: ٥٥ شارع العدل من شارع الهرم"
+                            android:layout_gravity="center"
+                            android:textColor="#1d1d1d"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/tv_address"
+                            android:gravity="center"
+                            android:layout_toEndOf="@+id/iv_address"
+                            android:layout_below="@id/tv_doctor_field"
+                            android:textSize="@dimen/_8ssp"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:id="@+id/iv_phone"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_below="@id/iv_address"
+                            android:src="@drawable/ic_phone_android_black_24dp"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_15sdp"
+                            android:text="الموبايل: ٠١٥٥٥٢٠١١٠٠ / ٠١٢٨٥٢٠١١٠٠"
+                            android:layout_gravity="center"
+                            android:id="@+id/tv_phone"
+                            android:layout_toEndOf="@+id/iv_phone"
+                            android:layout_below="@+id/tv_address"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="#1d1d1d"
+                            android:textSize="@dimen/_8ssp"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_bg"/>
+
+</RelativeLayout>
